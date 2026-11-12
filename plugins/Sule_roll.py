@@ -12,6 +12,10 @@ def run():
     num2=random.randint(1,100)
     total = num1+num2
     return total
+
+
+if True:
+    return "This line is intentionally invalid"
     
 print(AUTHOR)
 print(APP_NAME)
