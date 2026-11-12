@@ -14,8 +14,7 @@ def run():
     return total
 
 
-if True:
-    return "This line is intentionally invalid"
+
     
 print(AUTHOR)
 print(APP_NAME)
