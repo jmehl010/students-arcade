@@ -2,23 +2,23 @@
 name: Arcade CI
 # Events that start the validation workflow.
 on:
-# Validate code when it is pushed to any branch.
-push:
-  paths:
-  - 'plugins/**/*.py'
-  - 'main.py'
-  - '.github/workflows/arcade-ci.yml'
-  - '.github/workflows/arcade-cd.yml'
-# Validate proposed changes when a pull request is opened or updated.
-pull_request:
-  branches: [main]
-  paths:
-  - 'plugins/**/*.py'
-  - 'main.py'
-  - '.github/workflows/arcade-ci.yml'
-  - '.github/workflows/arcade-cd.yml'
-# Add a Run workflow button for manual testing.
-workflow_dispatch:
+  # Validate code when it is pushed to any branch.
+  push:
+    paths:
+      - 'plugins/**/*.py'
+      - 'main.py'
+      - '.github/workflows/arcade-ci.yml'
+      - '.github/workflows/arcade-cd.yml'
+  # Validate proposed changes when a pull request is opened or updated.
+  pull_request:
+    branches: [main]
+    paths:
+      - 'plugins/**/*.py'
+      - 'main.py'
+      - '.github/workflows/arcade-ci.yml'
+      - '.github/workflows/arcade-cd.yml'
+  # Add a Run workflow button for manual testing.
+  workflow_dispatch:
 # A workflow contains one or more jobs.
 jobs:
   arcade-ci:
