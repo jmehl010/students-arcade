@@ -21,7 +21,7 @@ on:
       - 'requirements.txt'
       - '.github/workflows/arcade-docker-smoke.yml'
 
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   docker-smoke-test:
